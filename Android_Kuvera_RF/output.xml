@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.0.2 (Python 3.10.1 on win32)" generated="20220316 17:52:46.436" rpa="false" schemaversion="2">
+<suite id="s1" name="Userflow" source="c:\Swapnil\Proj-Kuvera\Android Automation\Android_Kuvera_RF\Tests\userflow.robot">
+<kw name="Open Kuvera Application" library="keywords" type="SETUP">
+<kw name="Open Application" library="AppiumLibrary">
+<arg>${server}</arg>
+<arg>platformName=${platform}</arg>
+<arg>deviceName=${emulator}</arg>
+<arg>appPackage=${appPackage}</arg>
+<arg>appActivity=${appAcivity}</arg>
+<arg>automationName=Uiautomator2</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |</doc>
+<status status="PASS" starttime="20220316 17:52:47.193" endtime="20220316 17:53:09.856"/>
+</kw>
+<status status="PASS" starttime="20220316 17:52:47.192" endtime="20220316 17:53:09.856"/>
+</kw>
+<test id="s1-t1" name="Login">
+<kw name="navigate to Login screen" library="keywords">
+<kw name="Wait Until Page Contains" library="AppiumLibrary">
+<arg>Skip</arg>
+<arg>timeout=60</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<msg timestamp="20220316 17:54:10.659" level="INFO">&lt;?xml version='1.0' encoding='UTF-8' standalone='yes' ?&gt;
+&lt;hierarchy index="0" class="hierarchy" rotation="0" width="1080" height="2088"&gt;
+  &lt;android.widget.FrameLayout index="0" package="com.gooogle.android.kuvera.app" class="android.widget.FrameLayout" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,0][1080,2088]" displayed="true"&gt;
+    &lt;android.widget.LinearLayout index="0" package="com.gooogle.android.kuvera.app" class="android.widget.LinearLayout" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,0][1080,2088]" displayed="true"&gt;
+      &lt;android.widget.FrameLayout index="0" package="com.gooogle.android.kuvera.app" class="android.widget.FrameLayout" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,66][1080,2088]" displayed="true"&gt;
+        &lt;android.widget.LinearLayout index="0" package="com.gooogle.android.kuvera.app" class="android.widget.LinearLayout" text="" resource-id="com.gooogle.android.kuvera.app:id/action_bar_root" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,66][1080,2088]" displayed="true"&gt;
+          &lt;android.widget.FrameLayout index="0" package="com.gooogle.android.kuvera.app" class="android.widget.FrameLayout" text="" resource-id="android:id/content" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,66][1080,2088]" displayed="true"&gt;
+            &lt;android.webkit.WebView index="0" package="com.gooogle.android.kuvera.app" class="android.webkit.WebView" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,66][1080,2088]" displayed="true"&gt;
+              &lt;android.webkit.WebView index="0" package="com.gooogle.android.kuvera.app" class="android.webkit.WebView" text="Kuvera - Direct Mutual Funds | Stocks | FD | Gold | Insurance | Remit on Kuvera- Wealth Management Simplified" checkable="false" checked="false" clickable="false" enabled="true" focusable="true" focused="true" long-clickable="false" password="false" scrollable="true" selected="false" bounds="[0,66][1080,2088]" displayed="true"&gt;
+                &lt;android.view.View index="1" package="com.gooogle.android.kuvera.app" class="android.view.View" text="" resource-id="app" checkable="false" checked="false" clickable="true" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,66][1080,2088]" displayed="true"&gt;
+                  &lt;android.widget.Image index="0" package="com.gooogle.android.kuvera.app" class="android.widget.Image" text="splash" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[99,418][981,1738]" displayed="true" /&gt;
+                  &lt;android.view.View index="1" package="com.gooogle.android.kuvera.app" class="android.view.View" text="" checkable="false" checked="false" clickable="true" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[896,1914][1039,2054]" displayed="true"&gt;
+                    &lt;android.view.View index="0" package="com.gooogle.android.kuvera.app" class="android.view.View" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[935,1938][1003,2035]" displayed="true"&gt;
+                      &lt;android.widget.Image index="0" package="com.gooogle.android.kuvera.app" class="android.widget.Image" text="freshchat-message" checkable="false" checked="false" clickable="true" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[937,1958][1006,2002]" displayed="true" /&gt;
+                    &lt;/android.view.View&gt;
+                  &lt;/android.view.View&gt;
+                &lt;/android.view.View&gt;
+              &lt;/android.webkit.WebView&gt;
+            &lt;/android.webkit.WebView&gt;
+          &lt;/android.widget.FrameLayout&gt;
+        &lt;/android.widget.LinearLayout&gt;
+      &lt;/android.widget.FrameLayout&gt;
+    &lt;/android.widget.LinearLayout&gt;
+  &lt;/android.widget.FrameLayout&gt;
+&lt;/hierarchy&gt;</msg>
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20220316 17:54:11.904" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="appium-screenshot-1.png"&gt;&lt;img src="appium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20220316 17:54:10.659" endtime="20220316 17:54:11.906"/>
+</kw>
+<msg timestamp="20220316 17:54:11.907" level="FAIL">Text 'Skip' did not appear in 1 minute</msg>
+<status status="FAIL" starttime="20220316 17:53:09.861" endtime="20220316 17:54:11.907"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20220316 17:54:11.908" endtime="20220316 17:54:11.908"/>
+</kw>
+<kw name="tap on screen" library="keywords">
+<status status="NOT RUN" starttime="20220316 17:54:11.908" endtime="20220316 17:54:11.909"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20220316 17:54:11.909" endtime="20220316 17:54:11.909"/>
+</kw>
+<status status="FAIL" starttime="20220316 17:53:09.860" endtime="20220316 17:54:11.910"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20220316 17:54:11.911" endtime="20220316 17:54:11.911"/>
+</kw>
+<kw name="Enter User details" library="keywords">
+<status status="NOT RUN" starttime="20220316 17:54:11.912" endtime="20220316 17:54:11.912"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20220316 17:54:11.912" endtime="20220316 17:54:11.912"/>
+</kw>
+<status status="FAIL" starttime="20220316 17:53:09.856" endtime="20220316 17:54:11.914">Text 'Skip' did not appear in 1 minute</status>
+</test>
+<kw name="close Kuvera Application" library="keywords" type="TEARDOWN">
+<kw name="Close All Applications" library="AppiumLibrary">
+<doc>Closes all open applications.</doc>
+<status status="PASS" starttime="20220316 17:54:11.919" endtime="20220316 17:54:12.346"/>
+</kw>
+<status status="PASS" starttime="20220316 17:54:11.918" endtime="20220316 17:54:12.347"/>
+</kw>
+<status status="FAIL" starttime="20220316 17:52:46.441" endtime="20220316 17:54:12.347"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Userflow">Userflow</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
