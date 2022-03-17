@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 4.0.2 (Python 3.10.1 on win32)" generated="20220316 17:52:46.436" rpa="false" schemaversion="2">
-<suite id="s1" name="Userflow" source="c:\Swapnil\Proj-Kuvera\Android Automation\Android_Kuvera_RF\Tests\userflow.robot">
+<robot generator="Robot 4.0.2 (Python 3.10.1 on win32)" generated="20220317 23:51:54.558" rpa="false" schemaversion="2">
+<suite id="s1" name="Userflow" source="C:\Swapnil\Proj-Kuvera\Android Automation\Android_Kuvera_RF\Tests\userflow.robot">
 <kw name="Open Kuvera Application" library="keywords" type="SETUP">
 <kw name="Open Application" library="AppiumLibrary">
 <arg>${server}</arg>
@@ -15,96 +15,180 @@ Please check https://github.com/appium/appium/blob/master/docs/en/writing-runnin
 | *Option*            | *Man.* | *Description*     |
 | remote_url          | Yes    | Appium server url |
 | alias               | no     | alias             |</doc>
-<status status="PASS" starttime="20220316 17:52:47.193" endtime="20220316 17:53:09.856"/>
+<status status="PASS" starttime="20220317 23:51:55.924" endtime="20220317 23:52:26.156"/>
 </kw>
-<status status="PASS" starttime="20220316 17:52:47.192" endtime="20220316 17:53:09.856"/>
+<status status="PASS" starttime="20220317 23:51:55.911" endtime="20220317 23:52:26.157"/>
 </kw>
-<test id="s1-t1" name="Login">
+<test id="s1-t1" name="Verify user able to Login into application">
 <kw name="navigate to Login screen" library="keywords">
-<kw name="Wait Until Page Contains" library="AppiumLibrary">
-<arg>Skip</arg>
-<arg>timeout=60</arg>
-<doc>Waits until `text` appears on current page.</doc>
-<msg timestamp="20220316 17:54:10.659" level="INFO">&lt;?xml version='1.0' encoding='UTF-8' standalone='yes' ?&gt;
-&lt;hierarchy index="0" class="hierarchy" rotation="0" width="1080" height="2088"&gt;
-  &lt;android.widget.FrameLayout index="0" package="com.gooogle.android.kuvera.app" class="android.widget.FrameLayout" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,0][1080,2088]" displayed="true"&gt;
-    &lt;android.widget.LinearLayout index="0" package="com.gooogle.android.kuvera.app" class="android.widget.LinearLayout" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,0][1080,2088]" displayed="true"&gt;
-      &lt;android.widget.FrameLayout index="0" package="com.gooogle.android.kuvera.app" class="android.widget.FrameLayout" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,66][1080,2088]" displayed="true"&gt;
-        &lt;android.widget.LinearLayout index="0" package="com.gooogle.android.kuvera.app" class="android.widget.LinearLayout" text="" resource-id="com.gooogle.android.kuvera.app:id/action_bar_root" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,66][1080,2088]" displayed="true"&gt;
-          &lt;android.widget.FrameLayout index="0" package="com.gooogle.android.kuvera.app" class="android.widget.FrameLayout" text="" resource-id="android:id/content" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,66][1080,2088]" displayed="true"&gt;
-            &lt;android.webkit.WebView index="0" package="com.gooogle.android.kuvera.app" class="android.webkit.WebView" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,66][1080,2088]" displayed="true"&gt;
-              &lt;android.webkit.WebView index="0" package="com.gooogle.android.kuvera.app" class="android.webkit.WebView" text="Kuvera - Direct Mutual Funds | Stocks | FD | Gold | Insurance | Remit on Kuvera- Wealth Management Simplified" checkable="false" checked="false" clickable="false" enabled="true" focusable="true" focused="true" long-clickable="false" password="false" scrollable="true" selected="false" bounds="[0,66][1080,2088]" displayed="true"&gt;
-                &lt;android.view.View index="1" package="com.gooogle.android.kuvera.app" class="android.view.View" text="" resource-id="app" checkable="false" checked="false" clickable="true" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,66][1080,2088]" displayed="true"&gt;
-                  &lt;android.widget.Image index="0" package="com.gooogle.android.kuvera.app" class="android.widget.Image" text="splash" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[99,418][981,1738]" displayed="true" /&gt;
-                  &lt;android.view.View index="1" package="com.gooogle.android.kuvera.app" class="android.view.View" text="" checkable="false" checked="false" clickable="true" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[896,1914][1039,2054]" displayed="true"&gt;
-                    &lt;android.view.View index="0" package="com.gooogle.android.kuvera.app" class="android.view.View" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[935,1938][1003,2035]" displayed="true"&gt;
-                      &lt;android.widget.Image index="0" package="com.gooogle.android.kuvera.app" class="android.widget.Image" text="freshchat-message" checkable="false" checked="false" clickable="true" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[937,1958][1006,2002]" displayed="true" /&gt;
-                    &lt;/android.view.View&gt;
-                  &lt;/android.view.View&gt;
-                &lt;/android.view.View&gt;
-              &lt;/android.webkit.WebView&gt;
-            &lt;/android.webkit.WebView&gt;
-          &lt;/android.widget.FrameLayout&gt;
-        &lt;/android.widget.LinearLayout&gt;
-      &lt;/android.widget.FrameLayout&gt;
-    &lt;/android.widget.LinearLayout&gt;
-  &lt;/android.widget.FrameLayout&gt;
-&lt;/hierarchy&gt;</msg>
-<kw name="Capture Page Screenshot" library="AppiumLibrary">
-<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
-<msg timestamp="20220316 17:54:11.904" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="appium-screenshot-1.png"&gt;&lt;img src="appium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20220316 17:54:10.659" endtime="20220316 17:54:11.906"/>
-</kw>
-<msg timestamp="20220316 17:54:11.907" level="FAIL">Text 'Skip' did not appear in 1 minute</msg>
-<status status="FAIL" starttime="20220316 17:53:09.861" endtime="20220316 17:54:11.907"/>
-</kw>
 <kw name="Sleep" library="BuiltIn">
-<arg>2</arg>
+<arg>30</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" starttime="20220316 17:54:11.908" endtime="20220316 17:54:11.908"/>
+<msg timestamp="20220317 23:52:56.168" level="INFO">Slept 30 seconds</msg>
+<status status="PASS" starttime="20220317 23:52:26.159" endtime="20220317 23:52:56.168"/>
 </kw>
 <kw name="tap on screen" library="keywords">
-<status status="NOT RUN" starttime="20220316 17:54:11.908" endtime="20220316 17:54:11.909"/>
+<kw name="Tap" library="AppiumLibrary">
+<arg>${None}</arg>
+<arg>530</arg>
+<arg>2055</arg>
+<arg>count=1</arg>
+<doc>Tap element identified by ``locator``. </doc>
+<status status="PASS" starttime="20220317 23:52:56.169" endtime="20220317 23:53:06.336"/>
+</kw>
+<status status="PASS" starttime="20220317 23:52:56.168" endtime="20220317 23:53:06.337"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<arg>${email}</arg>
+<arg>timeout=10</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<status status="PASS" starttime="20220317 23:53:06.337" endtime="20220317 23:53:16.585"/>
+</kw>
+<status status="PASS" starttime="20220317 23:52:26.158" endtime="20220317 23:53:16.585"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>2</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" starttime="20220316 17:54:11.909" endtime="20220316 17:54:11.909"/>
-</kw>
-<status status="FAIL" starttime="20220316 17:53:09.860" endtime="20220316 17:54:11.910"/>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>2</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" starttime="20220316 17:54:11.911" endtime="20220316 17:54:11.911"/>
+<msg timestamp="20220317 23:53:18.602" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220317 23:53:16.586" endtime="20220317 23:53:18.603"/>
 </kw>
 <kw name="Enter User details" library="keywords">
-<status status="NOT RUN" starttime="20220316 17:54:11.912" endtime="20220316 17:54:11.912"/>
+<kw name="Input Text" library="AppiumLibrary">
+<arg>${email}</arg>
+<arg>pswapnil032@gmail.com</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<msg timestamp="20220317 23:53:18.611" level="INFO">Typing text 'pswapnil032@gmail.com' into text field '//*[contains(@resource-id, 'email')]'</msg>
+<status status="PASS" starttime="20220317 23:53:18.604" endtime="20220317 23:53:59.032"/>
 </kw>
+<kw name="Input Password" library="AppiumLibrary">
+<arg>${password}</arg>
+<arg>Swapnil@12321</arg>
+<doc>Types the given password into text field identified by `locator`.</doc>
+<msg timestamp="20220317 23:53:59.036" level="INFO">Typing password into text field '//*[contains(@resource-id, 'password')]'</msg>
+<status status="PASS" starttime="20220317 23:53:59.032" endtime="20220317 23:54:39.377"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${login_button}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20220317 23:54:39.380" level="INFO">Clicking element '//*[contains(@resource-id, 'login-btn')]'.</msg>
+<status status="PASS" starttime="20220317 23:54:39.377" endtime="20220317 23:55:19.703"/>
+</kw>
+<status status="PASS" starttime="20220317 23:53:18.603" endtime="20220317 23:55:19.703"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220317 23:55:21.717" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220317 23:55:19.704" endtime="20220317 23:55:21.717"/>
+</kw>
+<kw name="Setup later" library="keywords">
 <kw name="Sleep" library="BuiltIn">
 <arg>3</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" starttime="20220316 17:54:11.912" endtime="20220316 17:54:11.912"/>
+<msg timestamp="20220317 23:55:24.731" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20220317 23:55:21.719" endtime="20220317 23:55:24.731"/>
 </kw>
-<status status="FAIL" starttime="20220316 17:53:09.856" endtime="20220316 17:54:11.914">Text 'Skip' did not appear in 1 minute</status>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${setup_later}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20220317 23:55:24.735" level="INFO">Clicking element '//*[contains(@text, 'Setup Later')]'.</msg>
+<status status="PASS" starttime="20220317 23:55:24.731" endtime="20220317 23:56:05.037"/>
+</kw>
+<status status="PASS" starttime="20220317 23:55:21.718" endtime="20220317 23:56:05.038"/>
+</kw>
+<kw name="Home Page asserions" library="keywords">
+<kw name="Page Should Contain Element" library="AppiumLibrary">
+<arg>${invest_option}</arg>
+<doc>Verifies that current page contains `locator` element.</doc>
+<msg timestamp="20220317 23:56:15.400" level="INFO">Current page contains element '//*[contains(@text, 'Invest')]'.</msg>
+<status status="PASS" starttime="20220317 23:56:05.040" endtime="20220317 23:56:15.400"/>
+</kw>
+<kw name="Page Should Contain Element" library="AppiumLibrary">
+<arg>${Swapnil_profile}</arg>
+<doc>Verifies that current page contains `locator` element.</doc>
+<msg timestamp="20220317 23:56:25.728" level="INFO">Current page contains element '//*[contains(@text, 'Swapnil')]'.</msg>
+<status status="PASS" starttime="20220317 23:56:15.400" endtime="20220317 23:56:25.729"/>
+</kw>
+<status status="PASS" starttime="20220317 23:56:05.039" endtime="20220317 23:56:25.729"/>
+</kw>
+<status status="PASS" starttime="20220317 23:52:26.157" endtime="20220317 23:56:25.730"/>
 </test>
-<kw name="close Kuvera Application" library="keywords" type="TEARDOWN">
-<kw name="Close All Applications" library="AppiumLibrary">
-<doc>Closes all open applications.</doc>
-<status status="PASS" starttime="20220316 17:54:11.919" endtime="20220316 17:54:12.346"/>
+<test id="s1-t2" name="Verify user able to navigate to mutual fund Page.">
+<kw name="Navigate to mutual fund section" library="keywords">
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${invest_option}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20220317 23:56:25.744" level="INFO">Clicking element '//*[contains(@text, 'Invest')]'.</msg>
+<status status="PASS" starttime="20220317 23:56:25.735" endtime="20220317 23:57:06.291"/>
 </kw>
-<status status="PASS" starttime="20220316 17:54:11.918" endtime="20220316 17:54:12.347"/>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${mutual_fund}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20220317 23:57:06.295" level="INFO">Clicking element '//*[contains(@text, 'MF')]'.</msg>
+<status status="PASS" starttime="20220317 23:57:06.292" endtime="20220317 23:57:46.788"/>
 </kw>
-<status status="FAIL" starttime="20220316 17:52:46.441" endtime="20220316 17:54:12.347"/>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220317 23:57:48.795" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220317 23:57:46.788" endtime="20220317 23:57:48.795"/>
+</kw>
+<status status="PASS" starttime="20220317 23:56:25.734" endtime="20220317 23:57:48.795"/>
+</kw>
+<kw name="Mutual fund page asserions" library="keywords">
+<kw name="Page Should Contain Element" library="AppiumLibrary">
+<arg>${Swapnil_profile}</arg>
+<doc>Verifies that current page contains `locator` element.</doc>
+<msg timestamp="20220317 23:57:59.337" level="INFO">Current page contains element '//*[contains(@text, 'Swapnil')]'.</msg>
+<status status="PASS" starttime="20220317 23:57:48.797" endtime="20220317 23:57:59.337"/>
+</kw>
+<status status="PASS" starttime="20220317 23:57:48.796" endtime="20220317 23:57:59.337"/>
+</kw>
+<status status="PASS" starttime="20220317 23:56:25.732" endtime="20220317 23:57:59.338"/>
+</test>
+<test id="s1-t3" name="Verify user able to logout from the application.">
+<kw name="logout from profile section" library="keywords">
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${Swapnil_profile}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20220317 23:57:59.345" level="INFO">Clicking element '//*[contains(@text, 'Swapnil')]'.</msg>
+<status status="PASS" starttime="20220317 23:57:59.341" endtime="20220317 23:58:40.079"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${Logout}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20220317 23:58:40.083" level="INFO">Clicking element '//*[contains(@text, 'Logout')]'.</msg>
+<status status="PASS" starttime="20220317 23:58:40.080" endtime="20220317 23:59:20.621"/>
+</kw>
+<status status="PASS" starttime="20220317 23:57:59.341" endtime="20220317 23:59:20.621"/>
+</kw>
+<kw name="Logout Assertions" library="keywords">
+<kw name="Page Should Contain Element" library="AppiumLibrary">
+<arg>${email}</arg>
+<doc>Verifies that current page contains `locator` element.</doc>
+<msg timestamp="20220317 23:59:30.798" level="INFO">Current page contains element '//*[contains(@resource-id, 'email')]'.</msg>
+<status status="PASS" starttime="20220317 23:59:20.623" endtime="20220317 23:59:30.798"/>
+</kw>
+<kw name="Page Should Contain Element" library="AppiumLibrary">
+<arg>${password}</arg>
+<doc>Verifies that current page contains `locator` element.</doc>
+<msg timestamp="20220317 23:59:40.946" level="INFO">Current page contains element '//*[contains(@resource-id, 'password')]'.</msg>
+<status status="PASS" starttime="20220317 23:59:30.799" endtime="20220317 23:59:40.946"/>
+</kw>
+<status status="PASS" starttime="20220317 23:59:20.622" endtime="20220317 23:59:40.947"/>
+</kw>
+<status status="PASS" starttime="20220317 23:57:59.340" endtime="20220317 23:59:40.947"/>
+</test>
+<status status="PASS" starttime="20220317 23:51:54.565" endtime="20220317 23:59:40.950"/>
 </suite>
 <statistics>
 <total>
-<stat pass="0" fail="1" skip="0">All Tests</stat>
+<stat pass="3" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="0" fail="1" skip="0" id="s1" name="Userflow">Userflow</stat>
+<stat pass="3" fail="0" skip="0" id="s1" name="Userflow">Userflow</stat>
 </suite>
 </statistics>
 <errors>
