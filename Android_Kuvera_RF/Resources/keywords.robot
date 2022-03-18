@@ -22,6 +22,7 @@ navigate to Login screen
     Sleep    30
     tap on screen
     Wait Until Page Contains Element    ${email}    timeout=10
+    Sleep    2
 
 Enter User details
     Input Text        ${email}       pswapnil032@gmail.com
@@ -52,3 +53,5 @@ Logout Assertions
 
 Mutual fund page asserions
     Page Should Contain Element    ${Swapnil_profile}
+
+    
